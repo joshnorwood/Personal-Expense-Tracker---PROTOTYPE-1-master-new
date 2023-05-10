@@ -48,6 +48,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         newUser = User(userID: DataStore.shared.users.count + 1, email: email, password: password, occupation: "", salary: 0.0, expenses: [])
         if let newUser = newUser {
             DataStore.shared.users.append(newUser)
+            DataStore.shared.saveUsers() // save the updated user data
             UserDefaults.standard.set(newUser.userID, forKey: "loggedInUserID")
 
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -63,8 +64,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-
-    
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))

@@ -14,7 +14,7 @@ class BudgetViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var totalExpensesLabel: UILabel!
     @IBOutlet weak var remainingBalanceLabel: UILabel!
     
-    var currentUser: User?
+    var currentUser: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()

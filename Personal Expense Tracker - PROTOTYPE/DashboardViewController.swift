@@ -16,12 +16,19 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var balanceLabel: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let loggedInUserID = UserDefaults.standard.value(forKey: "loggedInUserID") as? Int {
-            currentUser = DataStore.shared.getUser(userID: loggedInUserID)
+            super.viewDidLoad()
+            
+            if let tabBarController = tabBarController,
+               let navController = tabBarController.viewControllers?[2] as? UINavigationController,
+               let budgetVC = navController.topViewController as? BudgetViewController {
+                budgetVC.currentUser = currentUser
+            }
+            
+            if let loggedInUserID = UserDefaults.standard.value(forKey: "loggedInUserID") as? Int {
+                currentUser = DataStore.shared.getUser(userID: loggedInUserID)
+            }
         }
-    }
+
 
 
     

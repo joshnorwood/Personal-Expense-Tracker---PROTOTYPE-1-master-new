@@ -64,7 +64,7 @@ extension AddExpenseViewController: UIPickerViewDataSource, UIPickerViewDelegate
     // UIPickerViewDelegate methods
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         let expense = loadExpenses()[row]
-        return "\(expense.name): \(expense.amount)"
+        return "\(expense.name)"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
