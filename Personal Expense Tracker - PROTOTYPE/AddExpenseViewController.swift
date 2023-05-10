@@ -7,6 +7,8 @@
 
 import UIKit
 
+let budgetCategoryAddedNotification = NSNotification.Name(rawValue: "budgetCategoryAdded")
+
 class AddExpenseViewController: UIViewController {
     
     var currentUser: User?
@@ -16,6 +18,8 @@ class AddExpenseViewController: UIViewController {
         super.viewDidLoad()
         previousExpensesPicker.dataSource = self
         previousExpensesPicker.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(loadCategoriesAndReloadPicker), name: budgetCategoryAddedNotification, object: nil)
+
     }
     
     @IBOutlet weak var expenseTextField: UITextField!
@@ -81,4 +85,9 @@ extension AddExpenseViewController: UIPickerViewDataSource, UIPickerViewDelegate
             selectedCategoryId = selectedCategory.id
         }
     }
+    
+    @objc func loadCategoriesAndReloadPicker() {
+        previousExpensesPicker.reloadAllComponents()
+    }
+
 }
