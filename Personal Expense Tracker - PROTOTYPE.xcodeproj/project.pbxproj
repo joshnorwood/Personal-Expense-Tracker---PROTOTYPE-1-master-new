@@ -13,7 +13,6 @@
 		AD1CE8A52A0AFF7A0087E944 /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CE8A42A0AFF7A0087E944 /* AddIncomeViewController.swift */; };
 		AD1CE8A72A0AFF850087E944 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CE8A62A0AFF850087E944 /* AddExpenseViewController.swift */; };
 		AD1CE8A92A0AFFA70087E944 /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CE8A82A0AFFA70087E944 /* BudgetViewController.swift */; };
-		AD1CE8AB2A0AFFD50087E944 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CE8AA2A0AFFD50087E944 /* AnalyticsViewController.swift */; };
 		ADCA680229E7B9C700D800A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA680129E7B9C700D800A6 /* AppDelegate.swift */; };
 		ADCA680429E7B9C700D800A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA680329E7B9C700D800A6 /* SceneDelegate.swift */; };
 		ADCA680629E7B9C700D800A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCA680529E7B9C700D800A6 /* ViewController.swift */; };
@@ -41,7 +40,6 @@
 		AD1CE8A42A0AFF7A0087E944 /* AddIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
 		AD1CE8A62A0AFF850087E944 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		AD1CE8A82A0AFFA70087E944 /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
-		AD1CE8AA2A0AFFD50087E944 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		ADCA67FE29E7B9C700D800A6 /* Personal Expense Tracker - PROTOTYPE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Expense Tracker - PROTOTYPE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCA680129E7B9C700D800A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADCA680329E7B9C700D800A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				ADCA681A29E7B9F100D800A6 /* Transaction.swift */,
 				ADCA680529E7B9C700D800A6 /* ViewController.swift */,
 				ADCA680729E7B9C700D800A6 /* Main.storyboard */,
-				AD1CE8AA2A0AFFD50087E944 /* AnalyticsViewController.swift */,
 				AD1CE8A82A0AFFA70087E944 /* BudgetViewController.swift */,
 				AD07598B2A0B3B2100C4C712 /* Expense.swift */,
 				AD07598D2A0B3B3400C4C712 /* ExpenseCategory.swift */,
@@ -204,7 +201,6 @@
 				ADCA681F29E7BA4000D800A6 /* Budget.swift in Sources */,
 				AD1CE8A52A0AFF7A0087E944 /* AddIncomeViewController.swift in Sources */,
 				ADCA682729E7C46900D800A6 /* RegisterViewController.swift in Sources */,
-				AD1CE8AB2A0AFFD50087E944 /* AnalyticsViewController.swift in Sources */,
 				ADCA682129E7BA5A00D800A6 /* Notification.swift in Sources */,
 				AD1CE8A92A0AFFA70087E944 /* BudgetViewController.swift in Sources */,
 				ADCA681B29E7B9F100D800A6 /* Transaction.swift in Sources */,

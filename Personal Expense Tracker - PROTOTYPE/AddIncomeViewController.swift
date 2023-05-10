@@ -34,6 +34,7 @@ class AddIncomeViewController: UIViewController {
     func saveIncome(occupation: String, salary: Double) {
         currentUser?.occupation = occupation
         currentUser?.salary = salary
+        DataStore.shared.saveUsers()
     }
 
 }
