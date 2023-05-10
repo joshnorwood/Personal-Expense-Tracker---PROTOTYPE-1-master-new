@@ -20,14 +20,13 @@ class BudgetViewController: UIViewController, UITableViewDataSource {
     var currentUser: User!
 
     override func viewDidLoad() {
-        DataStore.shared.loadUsers()
         currentUser = DataStore.shared.users.first
+        DataStore.shared.loadUsers()
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategoryCell")
-        NotificationCenter.default.addObserver(self, selector: #selector(updateLabels), name: budgetCategoryAddedNotification, object: nil)
-
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

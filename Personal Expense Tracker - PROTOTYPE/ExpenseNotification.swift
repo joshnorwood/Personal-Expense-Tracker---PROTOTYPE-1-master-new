@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Notification {
+class ExpenseNotification {
     var notificationID: Int
     var message: String
     var sentDate: Date
